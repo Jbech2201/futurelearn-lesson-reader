@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FutureLearn Reader Settings</title>
+  <style>
+    body { max-width: 640px; margin: 40px auto; padding: 0 20px; font: 15px/1.5 system-ui, sans-serif; color: #18212b; }
+    label { display: block; margin: 18px 0 6px; font-weight: 650; }
+    input { box-sizing: border-box; width: 100%; padding: 10px; }
+    button { margin-top: 16px; padding: 9px 14px; border: 0; border-radius: 6px; background: #0757a5; color: white; font-weight: 600; cursor: pointer; }
+    #status { margin-left: 10px; }
+    .warning { padding: 12px; background: #fff3d8; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Inception API settings</h1>
+  <p class="warning">Use a newly created Inception API key. The key is stored in this Chrome profile's local extension storage and is not encrypted by this extension. Do not paste it into chats or share it.</p>
+  <label for="key">Inception API key</label>
+  <input id="key" type="password" autocomplete="off" placeholder="sk-…">
+  <label for="model">Model</label>
+  <input id="model" value="mercury-3" autocomplete="off">
+  <button id="save">Save settings</button><span id="status" role="status"></span>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "FutureLearn Lesson Reader",
+  "version": "1.0.0",
+  "description": "Saves FutureLearn lessons and drafts grounded study notes with Inception Mercury.",
+  "permissions": ["activeTab", "scripting", "clipboardWrite", "storage"],
+  "host_permissions": ["https://www.futurelearn.com/*", "https://api.inceptionlabs.ai/*"],
+  "action": {
+    "default_title": "Read this FutureLearn lesson",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}

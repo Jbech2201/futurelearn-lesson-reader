@@ -1,0 +1,13 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Local secrets (keys are normally kept in Chrome storage.local, not files,
+# but ignore these just in case)
+.env
+.env.local
+*.key
+*.pem

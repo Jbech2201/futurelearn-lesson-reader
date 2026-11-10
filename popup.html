@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FutureLearn Lesson Reader</title>
+  <style>
+    body { width: 390px; margin: 0; padding: 16px; font: 14px/1.45 system-ui, sans-serif; color: #18212b; }
+    h1 { margin: 0 0 8px; font-size: 17px; }
+    p { margin: 8px 0; }
+    button { border: 0; border-radius: 6px; padding: 9px 12px; background: #0757a5; color: white; cursor: pointer; font-weight: 600; margin: 3px 3px 3px 0; }
+    button.secondary { background: #526170; }
+    button:disabled { opacity: .55; cursor: wait; }
+    textarea { box-sizing: border-box; width: 100%; height: 260px; margin-top: 10px; padding: 8px; resize: vertical; font: 12px/1.4 ui-monospace, monospace; }
+    #status { min-height: 20px; color: #405060; }
+    .note { color: #4c5966; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <h1>FutureLearn Lesson Reader</h1>
+  <p>Read a lesson, then save it with an AI drafted English comment and hands-on checklist in your local library.</p>
+  <button id="read">Read current lesson</button>
+  <button id="analyze" disabled>Save &amp; Analyze</button>
+  <button id="library" class="secondary">Open library</button>
+  <button id="settings" class="secondary">API settings</button>
+  <div id="status" role="status"></div>
+  <textarea id="result" placeholder="Read a lesson to preview its extracted text."></textarea>
+  <div id="analysis"></div>
+  <p class="note">Analysis sends this lesson text to Inception using your API key. Results are saved in this browser only. The extension does not post comments, submit answers, or control the lab.</p>
+  <script src="popup.js"></script>
+</body>
+</html>
